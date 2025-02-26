@@ -1,0 +1,35 @@
+import java.util.Stack;
+
+public class StackSample {
+	
+	Stack <Student> studStack = new Stack<Student>();
+	
+	public void pushStack()
+	{
+		studStack.push(new Student("S004","Kiran Kumar",87));
+		studStack.push(new Student("S001","Suman Kumar",77));
+		studStack.push(new Student("S003","Kishore Kumar",67));
+		studStack.push(new Student("S005","Rajesh Kumar",92));
+		studStack.push(new Student("S002","Rajendr Kumar",86));
+	}
+	public void popStack()
+	{
+		while(studStack.isEmpty() == false)
+		{
+			Student student = studStack.pop();
+			System.out.println(student);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StackSample ss = new StackSample();
+		ss.pushStack();
+		ss.popStack();
+
+	}
+	
+		
+		
+	
+
+}
